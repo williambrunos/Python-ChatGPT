@@ -3,6 +3,7 @@ import openai
 model_engine = "text-davinci-003"
 openai.api_key = "your-chatgpt-api-key-here"
 
+# This function queries the Chat GPT request
 def GPT(query):
     completion = openai.Completion.create(
         engine=model_engine,
